@@ -18,7 +18,7 @@ resource "aws_subnet" "public_1a" {
 }
 
 
-resource "aws_subnet" "public_1a" {
+resource "aws_subnet" "public_1b" {
   vpc_id = aws_vpc.cloud_vpc.id
   map_public_ip_on_launch = true
   availability_zone = "us-east-1"
