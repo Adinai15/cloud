@@ -13,7 +13,7 @@ tags = {
 resource "aws_subnet" "public_1a" {
   vpc_id = aws_vpc.cloud_vpc.id
   map_public_ip_on_launch = true
-  availability_zone = "us-east-1"
+  availability_zone = "us-east-1a"
   cidr_block = "10.0.0.0/26"
 }
 
@@ -21,6 +21,6 @@ resource "aws_subnet" "public_1a" {
 resource "aws_subnet" "public_1b" {
   vpc_id = aws_vpc.cloud_vpc.id
   map_public_ip_on_launch = true
-  availability_zone = "us-east-1"
+  availability_zone = "us-east-1b"
   cidr_block = "10.0.0.64/26"
 }
